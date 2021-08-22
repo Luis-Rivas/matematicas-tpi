@@ -1,0 +1,1 @@
+En esta carpeta se almacena todas las imagenes del proyecto
