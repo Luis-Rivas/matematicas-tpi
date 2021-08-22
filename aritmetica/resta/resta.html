@@ -2,14 +2,77 @@
 <html lang="es">
     <head>
       <title>
-  	 T&iacute;tulo de la P&acute;gina Web correspondiente
+       Resta en lenguaje de programación Java
       </title>
       <meta charset="utf-8">
-      <meta name="author"      content="nombre del autor de la pagina">
-      <meta name="keywords"    content="palabra1, palabra2, palabran">
-      <meta name="description" content="breve descripcion de contenido">
+      <meta name="author"      content="Kevin Arnoldo Salazar Abrego">
+      <meta name="keywords"    content="resta, sustracción, operadores, Java">
+      <meta name="description" content="Operación aritmética que consiste en quitar una cantidad (el sustraendo) de otra (el minuendo) para averiguar la diferencia entre las dos; se representa con el signo -.">
+      <STYLE>
+        body { 
+          font-family: "Gill Sans", sans-serif;
+          font-size: 12pt;
+          margin: 3em; 
+        }
+        .centrar {        
+          text-align: center;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      </STYLE>
     </head>
     <body>
         <!-- CONTENIDO DE LA PÁGINA -->
+        <div id="arriba" class="centrar">          
+          <a href=../index.html>Volver a Pagina Principal</a>    
+          <br>     
+          <img src="..//Imagenes/resta.jpg" alt="Imagen de resta">
+          <h1>Restar en lenguaje de programacion Java</h1>
+          <p>Para utilizar la operación de resta en el lenguaje Java se hace uso del operador "-".</p>
+          <h2><i>¿Que es un Operador?</i></h2>
+          <p>Un operador es un símbolo matemático que indica que debe ser llevada a cabo una operación especifica sobre un cierto número de operandos.</p>
+          <h2>Tipos de Operadores</h2>
+            <table style="margin: 0 auto;">
+              <tr>
+                <td>Operadores Aritmeticos</td>
+              </tr>
+              <tr>
+                <td>Operadores Lógicos o Booleanos</td>
+              </tr>
+              <tr>
+                <td>Operador Condicional</td>
+              </tr>
+              <tr>
+                <td>Operadores de Bits</td>
+              </tr>
+            </table>          
+          <p>El lenguaje de programación Java tiene varios operadores aritméticos para los datos numéricos enteros y reales. En la siguiente tabla se resumen los diferentes operadores de esta categoría.</p>
+          <img src="..//Imagenes/operadores-aritmeticos-basicos.png" alt="Operadores Basicos"> 
+          <p>A continuación se muestra un video donde se explica que es un operador y los distintos operadores que se pueden utilizar en Java</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ga2QENUB5E0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+          <h3>Implementacion de la resta en Java</h3>
+          <p>Lo primero que debemos hacer es declarar variables que usaremos y crear una clase Scanner para pedir los datos al usuario que se restaran</p>
+          <pre>
+int numero1;
+int numero2;
+int resultado;
+          Scanner reader = new Scanner(System.in);</pre>
+          <p>Luego le pedimos al usuario que ingrese los dos números a restar</p>
+          <pre>
+            System.out.println("Introduce el primer número:"); 
+numero1 = reader.nextInt();
+            System.out.println("Introduce el segundo número:");
+numero2 = reader.nextInt();</pre>
+          <p>Ahora solo procedemos a restar los números que se han ingresado</p>
+          <pre>resultado = numero1-numero2;</pre>
+          <p>Y mostramos el resultado en pantalla</p>
+          <pre>System.out.println("La resta es " + numero1 + " - " + numero2 + " = " + resultado);</pre>
+          <p>A continuación se encuentra un enlace hacia un compilador de Java online donde se ha implementado lo anterior mencionado</p>
+          <a href="https://paiza.io/projects/WcVPoJVcz369yTI3yj0wgA?locale=es-es" target="_blank">Compilador Java en linea</a>
+          <br>
+          <a href="#arriba">Subir</a>
+        </div>
     </body>
 </html>
