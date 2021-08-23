@@ -18,32 +18,55 @@ padding: 0;
     font-size: larger;
 }
 .nav{
-    justify-content: center;
-    display:contents;
-    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height:6rem;
+    display: block;
+}
+.nav ul li{
+    list-style: none;
+    float: left;
+    padding:2rem;
+    padding-right: 4rem;
+}
+.nav ul li:hover>a{
+   color:teal;
+}
+.nav ul li:hover>ul{
+    display: block;
+}
+.nav ul li:hover>ul li:hover> a{
+    color:white;
 }
 .nav ul li a{
     text-decoration: none;
     font-family:  "Gill Sans", sans-serif;
-    font-size: large;
-    padding-top:1rem;
-    color:black;
-}
-ul li{
-    list-style: none;
-    padding: 2%;
-    float: left;
-    padding-top:1rem;
-    padding-right: 8%;
-}
-ul li:hover>ul{
-    display: block;
+    color: black;
 }
 .submenu{
-    display:none;
+    padding-right: 1rem;
+    display: none;
     position:absolute;
-    float: left;
 }
 .submenu li{
-    clear:both;
+    margin-bottom: 1rem;
+    width: 4rem;
+    padding-right: 0.5rem;
+    background-color:#3E617E;
+    border-radius: 4%;
+    float: left;
+    clear: both;
 }
+.marginTop{
+    margin-top: 1rem;
+}
+img{
+    height: 5rem;
+    width: auto;
+}
+.estiloTexto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
