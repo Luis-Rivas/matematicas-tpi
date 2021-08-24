@@ -2,14 +2,181 @@
 <html lang="es">
     <head>
       <title>
-  	 T&iacute;tulo de la P&acute;gina Web correspondiente
+        Suma o Adiccion
       </title>
       <meta charset="utf-8">
-      <meta name="author"      content="nombre del autor de la pagina">
-      <meta name="keywords"    content="palabra1, palabra2, palabran">
-      <meta name="description" content="breve descripcion de contenido">
+      <meta name="author"      content="Kevin Josue Villalta">
+      <meta name="keywords"    content="suma,adicion">
+      <meta name="description" content=" operación matemática de composición que consiste en combinar o añadir dos números o más para obtener una cantidad final o total">
     </head>
+
+    <style>
+      header {
+        background: #3E617E;
+        height: 70px;
+        border-radius: 10px;
+      }
+
+      .nav ul li a{
+        text-decoration: none;
+        font-family:  "Gill Sans", sans-serif;
+        font-size: large;
+        color:black;
+      }
+
+      .nav li{
+        list-style: none;
+        padding: 2%;
+        float: left;    
+      }
+
+      ul li:hover>ul{
+        display: block;
+      }
+     .nav ul li{
+        list-style: none;
+        padding: 2%;
+        float: left;
+        padding-top: 22px;
+        padding-right: 4%;
+        padding-left: 0%;
+      }
+
+      .submenu{
+        display:none;
+        position:absolute;
+        background-color: #3E617E;
+        padding: 5px;
+        justify-content: center;
+      }
+
+      .submenu li{
+         clear:both;
+      }
+
+      #contenido{
+        float: left;
+        width: 600px;
+        background: #9797A6;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+
+      #contenido p{
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Arial;
+        margin-left: 10px;
+      }
+
+      #contenido h3{
+        margin-left: 15px;
+        margin-bottom: 5px;
+      }
+
+      #videosuma iframe{
+        margin-left: 25px;
+        margin-top: 20px;
+        height: 450px;
+        float:right;
+        margin-right: 50px;
+      }
+
+      #tituloSuma{
+        padding: 5px;
+        float: right;
+        color: white;
+        padding-right: 4%;
+      }
+
+      #imagenes img{
+        padding: 30px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+      }
+
+
+    </style>
+
     <body>
-        <!-- CONTENIDO DE LA PÁGINA -->
+      <div id="contenedor">
+        <header>
+          <!--
+          <div>
+            <button onclick="document.location='../../index.html'">Inicio</button>
+            <h1 class="centrado">Suma (adicion)</h1>
+            <img src="../../imagenes/suma.png" alt="Imagen de suma">   
+          </div>
+          --> 
+          <div class = "nav">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li>
+                    <a href="">Aritmética</a>
+                    <ul class= "submenu">
+                        <li><a href="../../aritmetica/resta/resta.html">Resta</a></li>
+                        <li><a href="../../aritmetica/multiplicacion/multiplicacion.html">multiplicacion</a></li>
+                        <li><a href="../../aritmetica/division/division.html">Division</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Geometría</a>
+                    <ul class="submenu">
+                        <li><a href="geometria/bidimensional/bidimensional.html">Bidimensional</a></li>
+                        <li><a href="geometria/tridimensional/tridimensional.html">Tridimensional</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 id="tituloSuma">Suma (Adiccion)</h3>
+
+        </div>
+                   
+        </header>
+
+        <div id="contenido">
+          <h3>Suma (Adicion)</h3>
+          <p>
+            La suma (también conocida como adición) es una de las cuatro operaciones 
+            básicas de la aritmética de los números enteros, decimales, fraccionarios, 
+            reales y complejos, e igualmente en expresiones algebraicas o 
+            sobre estructuras asociadas a ellos, como espacios vectoriales.
+
+            La representación o signo de la suma es mediante una cruz “+” que se le conoce como “más” o “positivo”.
+          </p>
+          <h3>Partes de la suma</h3>
+
+          <ul>
+            <li><p>Sumandos: Corresponde a los números a sumar.</p> </li>
+            <li><p>Suma: Es el resultado suma o total.</p></li>
+          </ul>
+
+          <div id="propiedades">
+            <h3>Prodiedades de la suma</h3>
+            <ul>
+              <li><p>Conmutativa: “El orden de los sumandos no altera el resultado o suma”</p></li>
+              <li><p>Uniformidad: “La suma de varios números dados tienen un valor único”</p></li>
+              <li><p>Asociativa: “La suma de varios números no varía sustituyendo varios sumandos por su suma”</p></li>
+              <li><p>Disociativa: “La suma de varios números no se altera descomponiendo uno o varios sumandos en dos o más sumandos”</p></li>
+            </ul>
+          </div>
+          
+        </div>
+
+        <div id="videosuma">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oexd_Dfic_Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="imagenes">
+          <img src="../../imagenes/suma2.jpg" alt="imagensuma2">
+          <img src="../../imagenes/suma1.jpg" alt="imagensuma1">
+        </div>
+        
+
+        
+      </div>    
     </body>
 </html>
