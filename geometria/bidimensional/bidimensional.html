@@ -9,7 +9,191 @@
       <meta name="keywords"    content="palabra1, palabra2, palabran">
       <meta name="description" content="breve descripcion de contenido">
     </head>
+
+    <style>
+      header {
+        background: #a83030;
+        height: 70px;
+        border-radius: 10px;
+      }
+
+      .nav ul li a{
+        text-decoration: none;
+        font-family:  "Gill Sans", sans-serif;
+        font-size: large;
+        color:black;
+      }
+
+      .nav li{
+        list-style: none;
+        padding: 2%;
+        float:left;
+      }
+
+      .nav ul li{
+        list-style: none;
+        padding: 2%;
+        float: left;
+        padding-top: 22px;
+        padding-right: 4%;
+        padding-left: 0%;
+      }
+
+      ul li:hover>ul{
+        display:block;
+      }
+
+      .submenu{
+        display:none;
+        position:absolute;
+        background-color: #707e3e;
+        padding: 5px;
+        justify-content: center;
+      }
+
+      .submenu li{
+         clear:both;
+      }
+
+    p{
+      text-align: center;
+      font: arial;
+      font-size: 14pt;
+    }
+
+    h1{
+      text-align: center;
+      font: arial;
+      font-size: 16pt;
+    }
+    table, th, td {
+      border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+    table {
+      align-self: center;
+    }
+
+
+
+    </style>
+
+
+
     <body>
         <!-- CONTENIDO DE LA PÁGINA -->
+        <header>
+        <div class = "nav">
+          <ul>
+              <li><a href="../../index.html">Inicio</a></li>
+              <li>
+                  <a href="">Aritmética</a>
+                  <ul class= "submenu">
+                    <li><a href="../../aritmetica/suma/suma.html">Suma</a></li>
+                    <li><a href="../../aritmetica/resta/resta.html">Resta</a></li>
+                    <li><a href="../../aritmetica/multiplicacion/multiplicacion.html">multiplicacion</a></li>
+                    <li><a href="../../aritmetica/division/division.html">Division</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="">Geometría</a>
+                  <ul class="submenu">
+                      <li><a href="../../geometria/tridimensional/tridimensional.html">Tridimensional</a></li>
+                  </ul>
+              </li>
+          </ul>
+
+      </div>
+      
+    </header>
+
+    <h1 id="tituloSuma"> GEOMETRIA BIDIMENSIONAL</h1>
+  
+    <p>
+    Las formas bidimensionales o planas: son las que se encuentran en un plano. 
+    Todo lo que dibujamos en un papel tiene dos dimensiones, que son la longitud y la anchura.
+    Los planos son bidimensionales, y solo pueden contener cuerpos unidimensionales o bidimensionales.
+    
+  </p>
+  
+  <img src="../../imagenes/planoCartesiano.png" alt="Imagen del planoCartesiano">
+
+  <table style="width: 50%">
+
+    <tr>
+      <th rowspan="2">
+        Numero
+      </th>
+      <th rowspan="2">
+        Figura
+      </th>
+      <th colspan="2">
+        Formula
+      </th>
+    </tr>
+    <tr>
+      <th>
+        Perimetro
+      </th>
+      <th>
+        Area
+      </th>
+    </tr>
+    <th>
+      1)
+    </th>
+    <th>
+     <p>
+       Circulo
+
+     </p>
+      <img src="../../imagenes/circulo.jpg" alt="Imagen de un circulo">
+    </th>
+    <th>
+      P=2πr
+    </th>
+    <th>
+    A=πr^2
+    </th>
+    <tr>
+      <th>
+        2)
+      </th>
+      <th>
+       <p>
+         Triangulo
+       </p>
+        <img src="../../imagenes/triangulo.png" alt="Imagen de un triangulo">
+      </th>
+      <th>
+        P=a+b+c
+      </th>
+      <th>
+      A=(b*h)/2
+    </tr>
+    <tr>
+      <th>
+        3)
+      </th>
+      <th>
+       <p>
+         Cuadrado
+       </p>
+        <img src="../../imagenes/cuadrado.png" alt="Imagen de un cuadrado">
+      </th>
+      <th>
+        P=4*l
+      </th>
+      <th>
+      A=l^2
+      </tr>
+  </table>
+
+  <p>
+    A continuacion se encuentra un video complementario sobre el tema
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fx8ykZkU1I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </body>
 </html>
