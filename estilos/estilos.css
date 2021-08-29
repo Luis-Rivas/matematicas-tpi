@@ -69,4 +69,13 @@ img{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
 }
-
+.caja{
+    margin-bottom: 2em;
+    padding:2em;
+    border-radius: 3%;
+    border-style: solid;
+}
+footer{
+    height: 4em;
+    background-color:#3E617E;
+}
