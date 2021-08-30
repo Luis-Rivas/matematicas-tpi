@@ -9,7 +9,274 @@
       <meta name="keywords"    content="palabra1, palabra2, palabran">
       <meta name="description" content="breve descripcion de contenido">
     </head>
-    <body>
-        <!-- CONTENIDO DE LA PÁGINA -->
+    <style>
+
+header {
+        background: #1ebb94;
+        height: 75px;
+        border-radius: 15px;
+      }
+
+      .nav ul li a{
+        text-decoration: none;
+        font-family:  "Gill Sans", sans-serif;
+        font-size: large;
+        color:black;
+        text-align: center;
+        
+      }
+
+      .nav li{
+        list-style: none;
+        padding: 2%;
+        float:left;
+        
+      }
+
+      .nav ul li{
+        list-style: none;
+        padding: 2%;
+        float: left;
+        padding-top: 22px;
+        padding-right: 4%;
+        padding-left: 0%;
+        
+      }
+
+      ul li:hover>ul{
+        display:block;
+      }
+
+      .submenu{
+        display:none;
+        position:absolute;
+        background-color: #47ddab;
+        padding: 5px;
+        justify-content: center;
+      }
+
+      .submenu li{
+         clear:both;
+      }
+
+      table th,td
+      {
+        border: 1px solid rgb(25, 128, 102);
+      }
+      table
+      {
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+      body
+      {
+        background-color: rgb(238, 212, 183);
+      }
+      img
+      {
+        border-radius: 10px;
+      }
+      h1
+      {
+        text-align: center;
+        font: arial;
+        font-size: 18;
+      }
+      h3 
+      {
+        text-align: center;
+        font: arial;
+        font-size: 12; 
+      }
+      p{
+        text-align: center;
+        font: arial;
+        font-size: 14;
+      }
+      .img-div-center{
+        height: 500px;
+        position: relative;
+      }
+  .img-centro-vert-hor{
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    </style>
+    <body >
+        
+
+      <!-- Inicio del NavBar-->
+   <header>
+    <div class="nav ">
+      <ul>
+        <li><a href="../../index.html">Inicio</a></li>
+        <li>
+            <a href="">Aritmética</a>
+            <ul class= "submenu">
+              <li><a href="../../aritmetica/suma/suma.html">Suma</a></li>
+              <li><a href="../../aritmetica/resta/resta.html">Resta</a></li>
+              <li><a href="../../aritmetica/multiplicacion/multiplicacion.html">multiplicacion</a></li>
+              <li><a href="../../aritmetica/division/division.html">Division</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Geometría</a>
+            <ul class="submenu">
+                <li><a href="../../geometria/bidimensional/bidimensional.html">Bidimensional</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+   </header>
+       <!-- Fin del NavBar-->
+
+       <!--Inicio de los parrafos-->
+       <h1> Geometría tridimensional</h1>
+
+     <div>
+      <p>Rama de las matemáticas encargada de las propiedades y medida de la extensión
+        de las formas que se pueden expresar con medidas y de las relaciones entre puntos, 
+        líneas, ángulos, planos y sólidos en el espacio para definir sus condiciones mediante
+        unas propiedades determinadas del espacio. También llamada geometría del espacio
+      </p>
+      <p>
+        Un objeto o ente es tridimensional si tiene tres dimensiones. 
+        Es decir, cada uno de sus puntos puede ser localizado especificando 
+        tres números dentro de un cierto rango. Ejemplo: anchura, altura y profundidad.
+      </p>
+
+      <h3>Plano en el espacio</h3>
+      <div class="img-div-center">
+        <img src="../../imagenes/espacio.png" class="img-centro-vert-hor" width="500" height="500" alt="Imagen del plano en el espacio">  
+      </div>
+     </div>
+       <!--Fin de los parrafos-->
+
+       <h3>Algunas de las figuras geometricas mas comunes son las presentadas en la siguiente tabla</h3>
+        <!--Inicio de la tabla-->
+        <table style="width: 50%">
+
+          <tr>
+            <th rowspan="2">
+              Numero
+            </th>
+            <th rowspan="2">
+              Figura geometrica
+            </th>
+            <th colspan="2">
+              Formula
+            </th>
+          </tr>
+          <tr>
+            <th>
+              Area superficial
+            </th>
+            <th>
+              Volumen
+            </th>
+          </tr>
+          <th>
+            1
+          </th>
+          <th>
+           <p>
+             Cubo
+      
+           </p>
+            <img src="../../imagenes/cubo.png" width="200" height="175"  alt="Imagen de un cubo con su formula">
+          </th>
+          <th>
+            As = 6(a^2)
+          </th>
+          <th>
+          V=a^3
+          </th>
+          <tr>
+            <th>
+              2
+            </th>
+            <th>
+             <p>
+              Cono
+             </p>
+              <img src="../../imagenes/cono.png" width="175" height="175"  alt="Imagen de un cono con su formula">
+            </th>
+            <th>
+              As = πR(R+a)
+            </th>
+            <th>
+            V = (πh(R^2))/3
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <th>
+             <p>
+               Cilindro
+             </p>
+              <img src="../../imagenes/cilindro.png" width="175" height="175"  alt="Imagen de un cilindro y su formula">
+            </th>
+            <th>
+              As = 2πR(R+h)
+            </th>
+            <th>
+            V=π(R^2)h
+            </tr>
+            <tr>
+              <th>
+                4
+              </th>
+              <th>
+               <p>
+                 Esfera
+               </p>
+                <img src="../../imagenes/esfera.png"  width="175" height="175" alt="Imagen de una esfera">
+              </th>
+              <th>
+                As = 4π(R^2)
+              </th>
+              <th>
+              V=(4π(R^3))/3
+              </tr>
+        </table>
+
+        <br>
+        <hr>  
+        <!--Fin de la tabla-->
+
+        <!--Anexos-->
+        <h3>A continuacion se presentan una serie de recursos para que puedan informarse mejor sobre este tema </h3>
+        <table>
+          <tr>
+          
+            <td>
+              <iframe width="305" height="300" src="https://www.youtube.com/embed/0Xko-qK4qMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        
+            <td>
+              <iframe width="305" height="300" src="https://www.youtube.com/embed/Qi-eedxIlJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        
+            <td>
+              <iframe width="305" height="300" src="https://www.youtube.com/embed/D4aVmnrZ4Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+  
+            <td>
+              <iframe width="305" height="300" src="https://www.youtube.com/embed/7DubuL7UEiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+          </tr>
+        
+        </table>
+        <br>
+        <hr>
+        <br>
+        <br>
     </body>
 </html>
